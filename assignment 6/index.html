@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .links {
+        padding-left: 30px;
+      }
+      #block1 {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+      }
+      #note1{
+        padding: 10px;
+        border: solid red 1px; 
+        border-radius: 10px
+      }
+      #note2{
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: yellow">
+    <header id="header_id">
+      <a href="#header_id" class="links">Page 1</a>
+      <a href="/page2.html" class="links">Page 2</a>
+      <a href="/page3.html" class="links">Page 3</a>
+    </header>
+
+    <div id="block1">
+      <h1>Bisection method</h1>
+      <p>
+        The bisection method is used to find the roots of a polynomial equation. It separates the interval and subdivides the interval in which the root of the equation lies. The principle behind this method is the intermediate theorem for continuous functions. It works by narrowing the gap between the positive and negative intervals until it closes in on the correct answer. This method narrows the gap by taking the average of the positive and negative intervals. It is a simple method and it is relatively slow. The bisection method is also known as interval halving method, root-finding method, binary search method or dichotomy method.Let us consider a continuous function “f” which is defined on the closed interval [a, b], is given with f(a) and f(b) of different signs. Then by intermediate theorem, there exists a point x belong to (a, b) for which f(x) = 0.
+      </p>
+    </div>
+    <br>   
+    <div id="note1">
+        <h2>Bisection Method Algorithm</h2>
+        <p >
+            Follow the below procedure to get the solution for the continuous function:
+            For any continuous function f(x),
+        </p>
+        <ul>
+            <li> Find two points, say a and b such that a < b and f(a)* f(b) < 0</li>
+            <li>Find the midpoint of a and b, say “t”</li>
+            <li>t is the root of the given function if f(t) = 0; else follow the next step</li>
+            <li>Divide the interval [a, b] – If f(t)*f(a) <0, there exist a root between t and a
+                – else if f(t) *f (b) < 0, there exist a root between t and b </li>
+            <li>Repeat above three steps until f(t) = 0.</li>
+        </ul>
+    </div>
+    
+    
+    <p id="note2">The bisection method is an approximation method to find the roots of the given equation by repeatedly dividing the interval. This method will divide the interval until the resulting interval is found, which is extremely small.</p>
+
+
+    <footer> For more information, click <a href="https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small." target="_blank">here</a></footer>
+  </body>
+</html>
