@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #img_main {
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        margin: 10px;
+      }
+      #sub_img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+      }
+      .image_figure {
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        width: fit-content;
+        margin: auto;
+      }
+      .div1 {
+        background-color: black;
+        width: 20px;
+        height: 20px;
+      }
+      .div2 {
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+      }
+      .div1 {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image_figure">
+      <header style="display: flex; margin: 10px">
+        <img src="img.jpg" alt="image" id="sub_img" />
+        <figcaption>
+          <p>
+            Joshua Rawson-Harris posted this photo on
+            <a href="https://unsplash.com">unspalshed</a>
+          </p>
+        </figcaption>
+      </header>
+
+      <img src="img.jpg" alt="image" id="img_main" />
+
+      <footer style="display: flex; margin: 10px">
+        <div class="div2">
+          <div class="div1"></div>
+          <p>21</p>
+        </div>
+
+        <div class="div2">
+          <div class="div1"></div>
+          <p>21</p>
+        </div>
+
+        <div class="div2">
+          <div class="div1"></div>
+          <p>21</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
