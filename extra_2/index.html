@@ -18,20 +18,26 @@
     </style>
   </head>
   <body>
-    <div onclick="myfunc()" id="circle"></div>
+    <div onclick="func()" id="circle"></div>
 
     <script>
-      //const color = ["red","blue"];
-      document.getElementById("circle").style.backgroundColor = "blue";
-      //const c_color = "blue";
-
-      function myfunc() {
-        const c_color = document.getElementById("circle").style.backgroundColor;
-        if (c_color === "red") {
-          document.getElementById("circle").style.backgroundColor = "blue";
-        } else if (c_color === "blue") {
-          document.getElementById("circle").style.backgroundColor = "red";
+      const color = ["red", "blue", "green","orange","pink","black","white","violet","pink","grey"];
+      //document.getElementById("circle").style.backgroundColor = "blue";
+      let currentIndex = 0;
+      function func() {
+        if (
+          document.getElementById("circle").style.backgroundColor ===
+          color[currentIndex]
+        ) {
+          console.log("The current index is ->", currentIndex);
+          currentIndex++;
         }
+        if (currentIndex === color.length) {
+          currentIndex = 0;
+          console.log("The current index is ->", currentIndex);
+        }
+        document.getElementById("circle").style.backgroundColor =
+          color[currentIndex];
       }
     </script>
   </body>
