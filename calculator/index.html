@@ -7,43 +7,59 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
 </head>
 <body style="background: black;">
 
     <h1>Online Calculator</h1>
     <div class="calculator">
-        <div class="result">
-
+        <div>
+            <input type="text" id="res">
         </div>
 
         <div class="calc-btns">
+            <!----------------------------------------------------- -->
             <div class="row first row">
-                <button class="btns clear">Clear</button>
-            <button class="btns ">&#247</button>
+                <button class="btns clear" value="c" onclick="clr()">Clear</button>
+            <button class="btns" value="/" onclick="display('/')">&#247</button>
             </div>
+            <!----------------------------------------------------- -->
             <div class="row second-row">
-                <button class="btns ">7</button>
-            <button class="btns ">8</button>
-            <button class="btns ">9</button>
-            <button class="btns ">&#215</button>
+            <button class="btns" value="7"onclick="display('7')" onkeydown="myevent()">7</button>
+            <button class="btns" value="8"onclick="display('8')" onkeydown="myevent()">8</button>
+            <button class="btns" value="9"onclick="display('9')" onkeydown="myevent()">9</button>
+            <button class="btns" value="*"onclick="display('*')" onkeydown="myevent()">&#215</button>
             </div>
+            <!----------------------------------------------------- -->
             <div class="row third-row">
-                <button class="btns ">4</button>
-            <button class="btns ">5</button>
-            <button class="btns ">6</button>
-            <button class="btns ">&#8722</button>
+            <button class="btns" value="4"onclick="display('4')" onkeydown="myevent()">4</button>
+            <button class="btns" value="5"onclick="display('5')" onkeydown="myevent()">5</button>
+            <button class="btns" value="6"onclick="display('6')" onkeydown="myevent()">6</button>
+            <button class="btns" value="-"onclick="display('-')" onkeydown="myevent()">&#8722</button>
             </div>
+            <!----------------------------------------------------- -->
             <div class="row forth-row">
-                <button class="btns ">1</button>
-            <button class="btns ">2</button>
-            <button class="btns ">3</button>
-            <button class="btns ">&#43</button>
+            <button class="btns" value="1"onclick="display('1')" onkeydown="myevent()">1</button>
+            <button class="btns" value="2"onclick="display('2')" onkeydown="myevent()">2</button>
+            <button class="btns" value="3"onclick="display('3')" onkeydown="myevent()">3</button>
+            <button class="btns" value="+"onclick="display('+')" onkeydown="myevent()">&#43</button>
             </div>
+            <!----------------------------------------------------- -->
             <div class="row fifth-row">
-                <button class="btns zero ">0</button>
-            <button class="btns "> &#61</button>
+                <button class="btns zero" value="0"onclick="display('0')" onkeydown="myevent()">0</button>
+            <button class="btns" value = "" onclick="solve()" onkeydown="myevent()" id="equals"> &#61</button>
             </div>
-            
         </div>
     </div>
 
