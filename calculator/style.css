@@ -37,3 +37,13 @@
 .btns:hover{
     background: #3e4b5c;
 }
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background-color: aqua;
+    color: black;
+    z-index: 1;
+    text-align: center;
+}
