@@ -1,0 +1,39 @@
+.calculator{
+    border:1px solid black;
+    background: #3A4655;
+    width: 400px;
+    color: white;
+    margin: auto;
+    height: 500px;
+    padding: 10px;
+}
+.result{
+    background: rgb(141, 129, 129);
+    width: 350px;
+    height: 100px;
+    margin: auto;
+    padding: 5px;
+}
+.calc-btns{
+    margin: auto;
+    background: grey;
+    width: 350px;
+    height: 360px;
+    margin-top: 10px;
+}
+.row{
+    height: 72px;
+    display: flex;
+    justify-content: center;
+}
+.clear, .zero{
+    flex-grow: 1;
+}
+.btns{
+    border: 1px solid;
+    width: 87.5px;
+    background: #425062;
+}
+.btns:hover{
+    background: #3e4b5c;
+}
