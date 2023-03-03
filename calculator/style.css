@@ -7,12 +7,16 @@
     height: 500px;
     padding: 10px;
 }
-.result{
-    background: rgb(141, 129, 129);
-    width: 350px;
+#res{
+    margin-left:20px;
+    width: 300px;
+    padding: 20px 30px;
     height: 100px;
-    margin: auto;
-    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 50px;
+    font-weight: bold;
+    background: #669999;
 }
 .calc-btns{
     margin: auto;
