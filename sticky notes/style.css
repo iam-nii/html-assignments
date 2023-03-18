@@ -1,0 +1,41 @@
+*{
+    margin: 10px;
+}
+.create{
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notes{
+    /* border: 2px solid black; */
+    height: fit-content;
+    flex-wrap: wrap;
+    width: 650px;
+    display: flex;
+    justify-content: left;
+    align-items:center ;
+}
+div{
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    min-width :150px;
+    min-height: 150px;
+    box-shadow: 7px 7px 8px #888888;
+}
+.newedit{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 40%;
+}
+.newdelete{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 40%;
+}
